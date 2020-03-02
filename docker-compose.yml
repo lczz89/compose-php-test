@@ -6,7 +6,7 @@ services:
     volumes:
       - phpsocket:/dev/shm
       - ${PROJ_PATH}:/home/www
-      - ${DOCKER_PATH}/docker-compose-example/vhosts:/etc/nginx/conf.d
+      - ${DOCKER_PATH}/vhosts:/etc/nginx/conf.d
       - ${DOCKER_PATH}/runtime/logs:/home/logs
     links:
       - backend5
